@@ -1,10 +1,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{site.title}}</title>
+	<title>{{site.title}}</title> 
+	<style>
+	.postborder{
+		width:66%;
+		margin: 0 auto;
+	}
+
+	</style>
 </head>
 <body>
-    {% include header.html color="blue" %}
+	<center> <a href="/"> {% include header.html color="blue" %} </a> </center>
+	<div class="postborder">
     {{content}}
+	</div>
 </body>
 </html>

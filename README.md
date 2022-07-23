@@ -1,3 +1,6 @@
+## Requirements
+https://jekyllrb.com/docs/installation/other-linux/
+
 ## Setting up jekyll 
 
 ```
