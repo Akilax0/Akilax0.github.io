@@ -10,5 +10,6 @@ identification of criminals' vehicles, identification of fake number plates, etc
 a really challenging task due to different reasons. In the image acquisition step, a lot of undesired noise,
 lighting issues, and blurring effects are introduced to the image due to these images being acquired from
 CCTV cameras under non-ideal conditions. "
+github: "https://drive.google.com/file/d/14ejy8Z_6T3mxUF3Oj9dBymhuGgTtWvGL/view"
 ---
 

@@ -5,7 +5,7 @@ permalink: /projects
 ---
 
 {% for post in site.categories.projects %}
-   -  [{{post.title}}]({{post.url}})
+   -  [{{post.title}}]({{post.github}})
    <br>
    {{post.description}}
 {% endfor %}
