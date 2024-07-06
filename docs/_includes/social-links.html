@@ -36,4 +36,10 @@
             <i class="fa-regular fa-envelope"></i>
         </a>
     {% endif %}
+
+    {% if site.weblink %}
+        <a class="link" data-title="{{site.weblink}}" href="{{ site.weblink }}" target="_blank"  rel="noopener" alt="anchor link for social media github" aria-label="anchor link for social media github">
+            <i class="fa-solid fa-link"></i>
+        </a>
+    {% endif %}
 </div>
