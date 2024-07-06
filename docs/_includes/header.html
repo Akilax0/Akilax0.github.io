@@ -1,24 +1,26 @@
-<header class="site-header">
+{% if page.title == "Home"
+   or page.title == "Blog"
+   or page.title == "Projects"
+   or page.title == "Tags"
+%}{% assign showHeader = true %}{% endif %}
 
-  <center><h1><a href="/">Akilax0's Blog</a></h1></center>
+{% if showHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        {% if site.about %}
+            <a class="link" href="{{ site.url }}/about">
+                <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </a>
+        {% else %}
+            <span class="link">
+                <img class="selfie" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </span>
+        {% endif %}
 
-  <center><i><h3>Greetings and all the works</h3></i></center>
+        <h1 class="title">{{ site.title }}</h1>
+        <h2 class="description">{{ site.bio }}</h2>
 
-  <center>
-  <p>
-  |  
-  <a href="/projects">Projects</a>
-  |
-  <a href="/notes">Notes</a>
-  |
-  <a href="/articles">Articles</a>
-  |
-  <a href="/books">Books</a>
-  |
-  <a href="/about">About</a>
-  |
-  </p>
-  </center>
+        {% include social-links.html %}
+    </header>
+{% endif %}
 
-</header>
-  
+{% include nav.html %}
