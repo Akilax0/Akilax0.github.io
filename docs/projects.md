@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Projects
+permalink: /projects/
 ---
-<section class="list">
+<!-- <section class="list">
     {% for post in site.posts %}
         {% if post.projects %}
             {% if post.hidden != true %}
@@ -15,4 +16,10 @@ title: Projects
             {% endif %}
         {% endif %}
     {% endfor %}
-</section>
+</section> -->
+
+{% for post in site.categories.projects %}
+   -  [{{post.title}}]({{post.github}})
+   <br>
+   {{post.description}}
+{% endfor %}
