@@ -1,0 +1,26 @@
+a:hover{
+	background-color:#aaaaFF;
+}
+
+a:focus{
+	background-color:#aaaaFF;
+}
+
+/*.noUnderline{
+	text-decoration: none !important;
+}*/
+
+body{
+    font-family:monospace;
+}
+
+li{
+	margin: 10px 0;
+}
+
+footer {
+    /* position: absolute;  */
+    bottom: 0; 
+    /* left: 0;  */
+    /* z-index: 10;  */
+}

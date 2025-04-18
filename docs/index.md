@@ -6,7 +6,8 @@ permalink: /
 
 <!-- ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}) -->
 
-<p>Hi! I am Akila Karunanayake a Computer Engineering undergraduate at University of Peradeniya, Sri Lanka.  This site contains some past notes and projects I've done and more importantly my current research pursuits. 
+<p>Hi! I am Akila Karunanayake instructor at the Department of Computer Engineering, University of Peradeniya, Sri Lanka.  This site contains some past notes and projects I've done and more importantly my current research pursuits. 
+
 
 </p>
 
