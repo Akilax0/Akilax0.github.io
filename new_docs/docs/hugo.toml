@@ -1,0 +1,12 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Akilax0'
+theme = 'nostyleplease'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  description = "Well its a personal site alright"
+  # appearance: "light", "dark", or "auto"
+  theme = "auto"

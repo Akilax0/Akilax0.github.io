@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header>
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</header>
+
+{{ .Content }}
+
+<h2> About </h2>
+
+{{with .Site.GetPage "/about"}}
+    {{.Content}}
+{{end}}
+<h2>Recent projects</h2>
+<ul>
+  {{ range first 3 (where .Site.RegularPages "Section" "projects").ByDate.Reverse }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a> — {{ .Summary }}</li>
+  {{ end }}
+</ul>
+
+<h2>Recent writing</h2>
+<ul>
+  {{ range first 5 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+    <li>{{ .Date.Format "2006-01-02" }} · <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}

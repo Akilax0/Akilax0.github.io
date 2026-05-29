@@ -1,0 +1,12 @@
+# data/menu.toml
+[[main]]
+  identifier = "posts"
+  name = "posts"
+  url = "/posts/"
+  weight = 2
+
+[[main]]
+  identifier = "about"
+  name = "about"
+  url = "/about/"
+  weight = 1
